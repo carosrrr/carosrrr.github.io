@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8">
+	<title> teste </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 	 <script src="https://use.fontaewsome.com/release/v5.0.8/js/all.js"></script>
+</head>
+<body>
+<!-- Navegação-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="http://www.w3c.se/graphics/ICT_SICS-170x49.png"> </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapese navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="Index.html"> Pagina Inicial </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="servicos.html"> Serviços </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contato.html"> Contato </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid p-3 my-3 border col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+  <h1 style="text-align: center;">Entre em contato conosco!</h1>
+</div>
+<div class="row ">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+		<h3 style="margin: 4rem; "> Preencha o formulário abaixo com sua necessidade e aguarde nosso contato para receber os cases de sucesso e conversarmos melhor! </h3>
+</div>
+		<!-- formulario -->
+<div class="container-fluid col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+<form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Primeiro Nome *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Informe seu primeiro nome *" required="required" data-error="È obrigatório o primeiro Nome">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Sobrenome *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Informe seu Sobrenome *" required="required" data-error="É obrigatório o Sobrenome.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Informe seu E-mail *" required="required" data-error="Um E-mail válido é necessário.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Nos informe sua necessidade *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Por favor, detalhe sua necessidade.">
+                        <option value=""></option>
+                        <option value="Request quotation">Solicitar Orçamento </option>
+                        <option value="Request order status">Solicitar Status do serviço </option>
+                        <option value="Request copy of an invoice">Solicitar cópia da NF </option>
+                        <option value="Other">Solicitar Contato</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Mensagem *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Mensagem para min *" rows="4" required="required" data-error="Por favor, escreva em detalhes."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input class="btn btn-success btn-send" value="Enviar Mensagem">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> Esses campos são obrigatórios.</p>
+            </div>
+        </div>
+    </div>
+
+</form>	
+</div>
+
+
+</body>
+</html>
